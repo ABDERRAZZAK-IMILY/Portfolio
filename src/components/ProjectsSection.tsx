@@ -14,7 +14,7 @@ interface Repository {
 
 const ProjectsSection = () => {
   const username = 'ABDERRAZZAK-IMILY';
-  const token = "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";
+  const token = "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";
 
   const [repos, setRepos] = useState<Repository[]>([]);
   const [filteredRepos, setFilteredRepos] = useState<Repository[]>([]);
