@@ -14,7 +14,7 @@ const HeroSection = () => {
         >
           Abderrazzak Imily
         </h1>
-        <h2 className="text-3xl md:text-5xl text-text-secondary font-bold mb-6">Web Developer</h2>
+        <h2 className="text-3xl md:text-5xl text-text-secondary font-bold mb-6">Full Stack Developer</h2>
         <p className="text-text-secondary text-lg max-w-lg mb-8">
           I'm a passionate web developer with a focus on creating modern and responsive applications.
           Currently focused on developing modern web applications using HTML, CSS, JavaScript, PHP and Laravel.
