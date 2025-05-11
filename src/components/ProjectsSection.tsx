@@ -14,7 +14,6 @@ interface Repository {
 
 const ProjectsSection = () => {
   const username = 'ABDERRAZZAK-IMILY';
- const token = import.meta.env.VITE_GITHUB_TOKEN;
 
   const [repos, setRepos] = useState<Repository[]>([]);
   const [filteredRepos, setFilteredRepos] = useState<Repository[]>([]);
@@ -27,12 +26,7 @@ const ProjectsSection = () => {
       try {
         setLoading(true);
         const res = await fetch(
-          `https://api.github.com/users/${username}/repos?sort=pushed&per_page=100`,
-          {
-            headers: {
-              Authorization: `token ${token}`,
-            },
-          }
+          `https://api.github.com/users/${username}/repos?sort=pushed&per_page=100`
         );
 
         if (!res.ok) {
@@ -63,7 +57,7 @@ const ProjectsSection = () => {
     };
 
     fetchRepos();
-  }, [username, token]);
+  }, [username]);
 
   const handleSearch = (e: React.ChangeEvent<HTMLInputElement>) => {
     const term = e.target.value.toLowerCase();
