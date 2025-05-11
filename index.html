@@ -1,35 +1,32 @@
-<!doctype html>
+
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>2KAbhishek's Projects</title>
-    <link rel="icon" href="images/favicon.png" type="image/png" />
-    <link rel="stylesheet" href="style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"
-    />
-    <script src="script.js" defer></script>
+    <title>Abderrazzak Imily - Web Developer Portfolio</title>
+    <meta name="description" content="Portfolio of Abderrazzak Imily, a web developer focused on creating modern and responsive applications" />
+    <meta name="author" content="Abderrazzak Imily" />
+
+    <meta property="og:title" content="Abderrazzak Imily - Web Developer Portfolio" />
+    <meta property="og:description" content="Portfolio of Abderrazzak Imily, a web developer focused on creating modern and responsive applications" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@AbderrazzakImily" />
+    <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+    
+    <!-- Preload fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Orbitron:wght@400;500;600;700&display=swap" rel="stylesheet">
   </head>
 
   <body>
-    <main class="container">
-      <h1>All Of My Projects</h1>
-      <small>Some useful, some stupid, all fun!</small>
-      <section class="intro">
-        <div class="user-info"></div>
-      </section>
-
-      <section class="repos">
-        <input
-          type="text"
-          class="filter-repos hide"
-          placeholder="Search Projects"
-        />
-        <ul class="repo-list"></ul>
-      </section>
-    </main>
+    <div id="root"></div>
+    <!-- IMPORTANT: DO NOT REMOVE THIS SCRIPT TAG OR THIS VERY COMMENT! -->
+    <script src="https://cdn.gpteng.co/gptengineer.js" type="module"></script>
+    <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
