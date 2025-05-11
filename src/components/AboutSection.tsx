@@ -1,4 +1,6 @@
 
+import imily from "../assest/imily.jpg"
+
 const AboutSection = () => {
   const technologies = [
     'HTML5 & CSS3',
@@ -39,7 +41,7 @@ const AboutSection = () => {
             <div className="absolute -inset-0.5 bg-accent-teal rounded-lg blur opacity-20 group-hover:opacity-40 transition duration-1000 group-hover:duration-300"></div>
             <div className="relative w-64 h-64 md:w-80 md:h-80 rounded-lg overflow-hidden border-2 border-accent-teal border-opacity-50">
               <img 
-                src="https://via.placeholder.com/400x400" 
+                src={imily} 
                 alt="Abderrazzak Imily" 
                 className="w-full h-full object-cover" 
               />
