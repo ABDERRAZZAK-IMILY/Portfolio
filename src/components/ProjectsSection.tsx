@@ -14,7 +14,7 @@ interface Repository {
 
 const ProjectsSection = () => {
   const username = 'ABDERRAZZAK-IMILY';
-  const token = "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";
+ const token = import.meta.env.VITE_GITHUB_TOKEN;
 
   const [repos, setRepos] = useState<Repository[]>([]);
   const [filteredRepos, setFilteredRepos] = useState<Repository[]>([]);
